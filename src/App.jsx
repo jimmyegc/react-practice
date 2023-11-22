@@ -44,6 +44,7 @@ function App() {
       <p className="parrafo">Hola</p>
       <button onClick={clickme}>mostrar saludo</button> |
       <Boton text="Hazme click"></Boton>
+      <br />
       <Imagen></Imagen>
       <div>
         { numeros.map((n,key) => {
@@ -59,7 +60,7 @@ function App() {
       <hr />
       <div>
         { productos.length > 0 && (
-          <div >        
+          <div className='grid'>        
           { 
             productos.map(producto => (
               <div className='card' key={ producto.id }>
