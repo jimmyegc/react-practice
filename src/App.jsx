@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Boton from './Boton'
+import Imagen from './Imagen'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,6 +44,7 @@ function App() {
       <p className="parrafo">Hola</p>
       <button onClick={clickme}>mostrar saludo</button> |
       <Boton text="Hazme click"></Boton>
+      <Imagen></Imagen>
       <div>
         { numeros.map((n,key) => {
             return <p key={key}>número: { n }</p>
